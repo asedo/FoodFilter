@@ -24,9 +24,14 @@ df['totalcal'] = df['calperserv']/dv['DV']['Caloriesm'] * 100
 df['foodtext'] = "\nCalories : " + str(df['calperserv']) + "\nProtein : " + str(df['protein'])
 
 foodgrp_key= list(set(df['foodgroup']))
-grp_val = list(map(int,range(len(foodgroups))))
-grphash = dict(zip(foodgrp_key,grp_key))
-grphash(df["foodgroup"])
+grp_val = list(map(int,range(len(foodgrp_key))))
+grphash = dict(zip(foodgrp_key,grp_val))
+
+for i in df[["foodgroup"]]:
+  print(grphash[df["foodgroup"][i]])
+
+    
+grphash[]
 
 print(foodgroups)
    
