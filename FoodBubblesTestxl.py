@@ -25,11 +25,10 @@ df['foodtext'] = "\nCalories : " + str(df['calperserv']) + "\nProtein : " + str(
 
 foodgrp_key= list(set(df['foodgroup']))
 grp_val = list(map(int,range(len(foodgrp_key))))
-grphash = dict(zip(foodgrp_key,grp_val))
+grpdict = dict(zip(foodgrp_key,grp_val))
 
 for i in df[["foodgroup"]]:
-  print(grphash[df["foodgroup"][i]])
-
+   df["grpnumbers"] = grphash[df["foodgroup"][i]]
     
 grphash[]
 
