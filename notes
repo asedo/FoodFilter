@@ -1,0 +1,10 @@
+# to see environments configured
+$ conda info --envs
+
+# to activate the environment
+$ source activate foodfilter
+
+# start jupyter notebook
+$ jupyter notebook
+
+
